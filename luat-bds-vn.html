@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tổng hợp thay đổi pháp lý BĐS Việt Nam — Luật mới vs Luật cũ</title>
+<style>
+:root{
+  color-scheme: light;
+  --navy:#0f2a47; --navy2:#1b3c60; --teal:#0f766e; --teal-l:#e6f2f1;
+  --amber:#b45309; --amber-l:#fef3e2; --red:#b91c1c; --red-l:#fdeaea;
+  --green:#15803d; --green-l:#e8f5ec; --blue:#1d4ed8; --blue-l:#e8eefc;
+  --ink:#1f2937; --muted:#5b6b7d; --line:#e3e8ee; --bg:#f6f8fa; --card:#ffffff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  line-height:1.6;font-size:15.5px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 18px}
+header.hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:34px 0 28px}
+header.hero h1{margin:0 0 6px;font-size:26px;line-height:1.25}
+header.hero p{margin:4px 0;color:#cdd9e6;font-size:14.5px}
+.badge-date{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+  color:#eaf1f8;padding:3px 10px;border-radius:999px;font-size:12.5px;margin-top:10px}
+.disclaimer{background:var(--amber-l);border:1px solid #f2d9b0;color:#7a4a08;
+  padding:11px 14px;border-radius:10px;font-size:13px;margin:16px 0 0}
+nav.tabs{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--line);
+  box-shadow:0 1px 6px rgba(15,42,71,.05)}
+nav.tabs .wrap{display:flex;gap:4px;overflow-x:auto;padding:8px 12px}
+nav.tabs button{white-space:nowrap;border:0;background:transparent;color:var(--muted);
+  font-size:13.5px;font-weight:600;padding:8px 12px;border-radius:8px;cursor:pointer}
+nav.tabs button:hover{background:#eef2f6;color:var(--navy)}
+nav.tabs button.active{background:var(--navy);color:#fff}
+section.tab{display:none;padding:24px 0 40px}
+section.tab.active{display:block}
+h2.sec{font-size:20px;color:var(--navy);margin:2px 0 4px}
+.lead{color:var(--muted);font-size:14.5px;margin:0 0 18px}
+.law-meta{display:inline-block;background:var(--teal-l);color:var(--teal);font-weight:700;
+  font-size:12.5px;padding:3px 10px;border-radius:6px;margin-bottom:10px}
+.cmp{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:0;margin:0 0 16px;overflow:hidden}
+.cmp .top{padding:13px 16px;border-bottom:1px solid var(--line);background:#fbfcfd}
+.cmp .top h3{margin:0;font-size:15.5px;color:var(--navy)}
+.cmp .grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.cmp .col{padding:13px 16px}
+.cmp .col.old{background:#fbfafa;border-right:1px solid var(--line)}
+.cmp .col .lbl{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:5px}
+.cmp .col.old .lbl{color:#9a3412}
+.cmp .col.new .lbl{color:var(--green)}
+.cmp .col p{margin:0;font-size:14px}
+.impact{padding:11px 16px;border-top:1px dashed var(--line);background:#fcfdfe;font-size:13.5px}
+.tag{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;margin-right:6px}
+.tag.dn{background:var(--blue-l);color:var(--blue)}
+.tag.kh{background:var(--teal-l);color:var(--teal)}
+.impact .row{margin:3px 0}
+.note{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--teal);
+  border-radius:10px;padding:13px 16px;margin:0 0 14px;font-size:14px}
+.note.warn{border-left-color:var(--amber)}
+.note.info{border-left-color:var(--blue)}
+.note b{color:var(--navy)}
+.pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 18px}
+.pill{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-size:13px;font-weight:600;color:var(--navy2)}
+.pill span{color:var(--teal)}
+table.impact-tbl{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:13.8px}
+table.impact-tbl th,table.impact-tbl td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+table.impact-tbl th{background:var(--navy);color:#fff;font-size:13px}
+table.impact-tbl tr:last-child td{border-bottom:0}
+table.impact-tbl td:first-child{font-weight:700;color:var(--navy2);width:26%}
+.timeline{border-left:2px solid var(--line);margin:6px 0 18px;padding-left:18px}
+.timeline .ev{position:relative;margin-bottom:15px}
+.timeline .ev::before{content:"";position:absolute;left:-25px;top:4px;width:11px;height:11px;border-radius:50%;background:var(--teal);border:2px solid #fff;box-shadow:0 0 0 2px var(--teal)}
+.timeline .ev .d{font-weight:700;color:var(--navy)}
+.timeline .ev .t{color:var(--muted);font-size:14px}
+footer{background:#0d2138;color:#b9c7d6;padding:22px 0 30px;font-size:12.5px}
+footer a{color:#8fb8e6;text-decoration:none}
+footer h4{color:#fff;margin:0 0 8px;font-size:14px}
+footer li{margin:3px 0}
+@media(max-width:640px){.cmp .grid{grid-template-columns:1fr}.cmp .col.old{border-right:0;border-bottom:1px solid var(--line)}header.hero h1{font-size:22px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Bức tranh pháp lý Bất động sản Việt Nam — Luật mới so với Luật cũ</h1>
+    <p>Ba luật nền tảng hiệu lực 01/08/2024 · Nghị quyết đặc thù 170 & 171 · Dự thảo sửa đổi 2026</p>
+    <p>Góc nhìn trọng tâm: <b style="color:#fff">doanh nghiệp / nhà đầu tư</b>, kèm tác động tới khách hàng mua nhà</p>
+    <span class="badge-date">Cập nhật: 22/07/2026</span>
+    <div class="disclaimer">⚠️ Nội dung mang tính <b>tham khảo</b>, không phải tư vấn pháp lý hay khuyến nghị đầu tư. Số điều/khoản, nghị định và dự thảo có thể thay đổi — cần đối chiếu văn bản gốc và tham vấn luật sư cho từng tình huống cụ thể.</div>
+  </div>
+</header>
+
+<nav class="tabs">
+  <div class="wrap" id="tabnav">
+    <button class="active" data-t="tq">Tổng quan</button>
+    <button data-t="kdbds">Kinh doanh BĐS 2023</button>
+    <button data-t="nhao">Nhà ở 2023</button>
+    <button data-t="datdai">Đất đai 2024</button>
+    <button data-t="nghiquyet">Nghị quyết 170 & 171</button>
+    <button data-t="von">Huy động vốn</button>
+    <button data-t="duthao">Dự thảo sửa đổi 2026</button>
+    <button data-t="tacdong">Tác động DN & KH</button>
+  </div>
+</nav>
+
+<!-- TỔNG QUAN -->
+<section class="tab active" id="tq">
+  <div class="wrap">
+    <h2 class="sec">Cuộc "đại tu" khung pháp lý BĐS 2024–2026</h2>
+    <p class="lead">Chỉ trong hai năm, nền tảng pháp lý của toàn ngành đã được viết lại: ba luật lớn cùng hiệu lực, hai nghị quyết đặc thù gỡ vướng, và nay là một dự thảo sửa đổi Luật Đất đai đang được lấy ý kiến.</p>
+
+    <div class="pill-row">
+      <div class="pill">Luật Đất đai 2024 · <span>31/2024/QH15</span></div>
+      <div class="pill">Luật Nhà ở 2023 · <span>27/2023/QH15</span></div>
+      <div class="pill">Luật Kinh doanh BĐS 2023 · <span>29/2023/QH15</span></div>
+    </div>
+
+    <div class="note info">Ba luật trên được <b>Luật 43/2024/QH15</b> đẩy hiệu lực sớm 5 tháng, cùng áp dụng từ <b>01/08/2024</b> (thay vì 01/01/2025). Kèm theo là hệ thống nghị định: NĐ 71/88/101/102/103/104 (Đất đai), NĐ 95/98/100 (Nhà ở), NĐ 94/96 (Kinh doanh BĐS) và Thông tư 61/2024/TT-NHNN (bảo lãnh).</div>
+
+    <h2 class="sec" style="margin-top:22px">Dòng thời gian pháp lý</h2>
+    <div class="timeline">
+      <div class="ev"><div class="d">01/08/2024</div><div class="t">Ba luật Đất đai 2024, Nhà ở 2023, Kinh doanh BĐS 2023 chính thức có hiệu lực.</div></div>
+      <div class="ev"><div class="d">01/04/2025</div><div class="t">Nghị quyết 170/2024 (gỡ dự án tồn đọng tại TP.HCM, Đà Nẵng, Khánh Hòa) và Nghị quyết 171/2024 (thí điểm thỏa thuận nhận QSDĐ) có hiệu lực.</div></div>
+      <div class="ev"><div class="d">01/01/2026</div><div class="t">Áp dụng bảng giá đất mới theo cơ chế hằng năm, sát giá thị trường.</div></div>
+      <div class="ev"><div class="d">20/07–10/08/2026</div><div class="t">Lấy ý kiến Dự thảo Luật Đất đai (sửa đổi).</div></div>
+      <div class="ev"><div class="d">~10/2026</div><div class="t">Dự kiến trình Quốc hội xem xét Dự thảo Luật Đất đai (sửa đổi) tại Kỳ họp thứ 2, khóa XVI.</div></div>
+    </div>
+
+    <div class="note"><b>Bốn trục thay đổi lớn nhất:</b> (1) định giá đất chuyển sang bảng giá hằng năm sát thị trường; (2) siết bảo vệ người mua (cọc 5%, tiến độ thanh toán, bảo lãnh); (3) khơi thông quỹ đất & M&A dự án; (4) siết kỷ luật vốn (điều kiện vốn chủ sở hữu, tín dụng, trái phiếu).</div>
+  </div>
+</section>
+
+<!-- KINH DOANH BĐS -->
+<section class="tab" id="kdbds">
+  <div class="wrap">
+    <span class="law-meta">Luật Kinh doanh Bất động sản 2023 · 29/2023/QH15</span>
+    <h2 class="sec">Siết chặt bán hàng, minh bạch dòng tiền, mở đường M&A dự án</h2>
+    <p class="lead">Đây là luật thay đổi nhiều nhất cho hoạt động bán hàng và huy động vốn của chủ đầu tư.</p>
+
+    <div class="cmp">
+      <div class="top"><h3>1. Tiền đặt cọc nhà hình thành trong tương lai</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Luật cũ (2014)</div><p>Không quy định trần đặt cọc. Chủ đầu tư huy động sớm qua "giữ chỗ", "góp vốn", "hợp đồng vay" khi dự án chưa đủ điều kiện.</p></div>
+        <div class="col new"><div class="lbl">Luật mới (Điều 23)</div><p>Đặt cọc <b>tối đa 5%</b> giá bán, và <b>chỉ được thu khi nhà ở đã đủ điều kiện đưa vào kinh doanh</b>.</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>Giảm khả năng huy động vốn giá rẻ giai đoạn sớm; buộc chuẩn hóa pháp lý trước khi mở bán.</div>
+        <div class="row"><span class="tag kh">KH</span>Giảm mạnh rủi ro mất tiền ở giai đoạn "đặt chỗ" khi dự án chưa đủ điều kiện.</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="top"><h3>2. Tiến độ thanh toán & giữ lại 5% chờ sổ</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Luật cũ</div><p>Đã có trần ≤70% trước bàn giao và ≤95% trước khi cấp sổ, nhưng thực thi lỏng, nhiều HĐ ép thanh toán nhanh.</p></div>
+        <div class="col new"><div class="lbl">Luật mới (Điều 25)</div><p>Lần đầu <b>≤30%</b> (gồm cọc); tổng <b>≤70%</b> trước bàn giao (<b>≤50%</b> nếu CĐT vốn nước ngoài); <b>≤95%</b> khi chưa có sổ, giữ lại <b>5%</b> đến khi cấp Giấy chứng nhận.</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>Dòng tiền phụ thuộc tiến độ xây dựng thực; 5% bị "treo" tạo áp lực phải hoàn tất ra sổ.</div>
+        <div class="row"><span class="tag kh">KH</span>Có công cụ pháp lý giữ lại 5% ép chủ đầu tư làm sổ; không buộc trả 100% khi nhận nhà.</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="top"><h3>3. Điều kiện mở bán & minh bạch thông tin</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Luật cũ</div><p>Yêu cầu văn bản đủ điều kiện bán và bảo lãnh, nhưng thông tin dự án công khai hạn chế.</p></div>
+        <div class="col new"><div class="lbl">Luật mới</div><p>Bắt buộc <b>công khai thông tin dự án</b> trước khi kinh doanh; giữ yêu cầu <b>văn bản Sở Xây dựng đủ điều kiện bán</b> + <b>bảo lãnh ngân hàng</b> (TT 61/2024).</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>Tăng nghĩa vụ công bố; hồ sơ pháp lý phải sẵn sàng và chuẩn.</div>
+        <div class="row"><span class="tag kh">KH</span>Dễ kiểm chứng tính pháp lý trước khi xuống tiền.</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="top"><h3>4. Phân lô, bán nền</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Luật cũ</div><p>Cấm phân lô bán nền chủ yếu ở đô thị loại đặc biệt và loại I.</p></div>
+        <div class="col new"><div class="lbl">Luật mới (Điều 31)</div><p>Mở rộng cấm chuyển nhượng QSDĐ cho cá nhân tự xây tại phường của đô thị <b>đặc biệt, I, II và III</b>.</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>Thu hẹp mạnh sản phẩm đất nền ở đô thị lớn; buộc chuyển sang xây nhà hoàn thiện.</div>
+        <div class="row"><span class="tag kh">KH</span>Ít sản phẩm "đất nền tự xây" hơn ở đô thị lớn; giảm rủi ro mua nền không được xây/ra sổ.</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="top"><h3>5. Chuyển nhượng toàn bộ / một phần dự án (M&A)</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Luật cũ</div><p>Bên chuyển nhượng phải <b>có Giấy chứng nhận QSDĐ</b> cho phần dự án — rào cản lớn cho M&A.</p></div>
+        <div class="col new"><div class="lbl">Luật mới (Điều 40)</div><p><b>Không bắt buộc đã có sổ</b>; chỉ cần đã có quyết định giao/thuê đất và <b>hoàn thành nghĩa vụ tài chính về đất</b>. Nếu theo Luật Đầu tư thì thủ tục theo Luật Đầu tư (Điều 41).</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>Mở đường chuyển nhượng dự án dễ hơn — kênh tái cấu trúc, thoái vốn, hợp tác quan trọng.</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="top"><h3>6. Điều kiện vốn của chủ đầu tư</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Luật cũ</div><p>Yêu cầu vốn pháp định/ký quỹ nhưng ít ràng buộc về đòn bẩy.</p></div>
+        <div class="col new"><div class="lbl">Luật mới (Điều 9)</div><p>Vốn chủ sở hữu <b>≥20%</b> tổng mức đầu tư (dự án &lt;20ha) / <b>≥15%</b> (≥20ha); đảm bảo <b>tỷ lệ dư nợ tín dụng & trái phiếu trên vốn CSH</b>.</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>Rào cản với chủ đầu tư mỏng vốn, làm nhiều dự án cùng lúc bằng đòn bẩy cao.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NHÀ Ở -->
+<section class="tab" id="nhao">
+  <div class="wrap">
+    <span class="law-meta">Luật Nhà ở 2023 · 27/2023/QH15</span>
+    <h2 class="sec">Sở hữu chung cư, chung cư mini, nhà ở xã hội</h2>
+    <p class="lead">Gỡ nhiều tranh cãi kéo dài về sở hữu và mở rộng chính sách nhà ở xã hội.</p>
+
+    <div class="cmp">
+      <div class="top"><h3>1. Thời hạn sở hữu nhà chung cư</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Trước đó (đề xuất gây tranh cãi)</div><p>Từng có đề xuất "sở hữu chung cư có thời hạn" (theo niên hạn công trình) — gây lo ngại lớn cho thị trường.</p></div>
+        <div class="col new"><div class="lbl">Luật mới</div><p><b>Không quy định thời hạn sở hữu</b> — người mua căn hộ vẫn <b>sở hữu lâu dài</b>, gắn với thời hạn sử dụng đất của dự án.</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag kh">KH</span>Yên tâm về quyền sở hữu lâu dài của căn hộ.</div>
+        <div class="row"><span class="tag dn">DN</span>Giữ được sức cầu chung cư, tránh cú sốc tâm lý thị trường.</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="top"><h3>2. Chung cư mini (nhà nhiều tầng nhiều căn hộ của cá nhân)</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Luật cũ</div><p>Pháp lý mờ, đa số không được cấp sổ riêng từng căn; mua bán rủi ro cao.</p></div>
+        <div class="col new"><div class="lbl">Luật mới</div><p>Căn hộ chung cư mini <b>đủ điều kiện được cấp Giấy chứng nhận</b> và mua bán hợp pháp — nhưng phải đạt điều kiện xây dựng, PCCC.</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag kh">KH</span>Có khung để được cấp sổ, song phải kiểm tra kỹ giấy phép & PCCC (nhiều công trình cũ chưa đạt).</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="top"><h3>3. Nhà ở xã hội</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Luật cũ</div><p>Nhiều điều kiện với người mua (gồm điều kiện cư trú); quỹ đất 20% cứng nhắc; ưu đãi CĐT hạn chế.</p></div>
+        <div class="col new"><div class="lbl">Luật mới</div><p><b>Bỏ điều kiện cư trú</b> với người mua; linh hoạt bố trí quỹ đất 20% (đóng tiền/quỹ đất khác); tăng ưu đãi cho chủ đầu tư NƠXH.</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>NƠXH hấp dẫn hơn với chủ đầu tư; linh hoạt nghĩa vụ quỹ đất 20%.</div>
+        <div class="row"><span class="tag kh">KH</span>Dễ tiếp cận NƠXH hơn (bớt rào cản hộ khẩu/cư trú).</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="top"><h3>4. Quyền sở hữu nhà của người gốc Việt định cư ở nước ngoài</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Luật cũ</div><p>Quyền hạn chế, thủ tục phức tạp.</p></div>
+        <div class="col new"><div class="lbl">Luật mới</div><p><b>Mở rộng quyền</b> sở hữu nhà ở, tiệm cận công dân trong nước (đồng bộ với Luật Đất đai 2024).</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>Mở rộng tệp khách hàng kiều bào.</div>
+        <div class="row"><span class="tag kh">KH</span>Kiều bào dễ mua và đứng tên nhà hơn.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ĐẤT ĐAI -->
+<section class="tab" id="datdai">
+  <div class="wrap">
+    <span class="law-meta">Luật Đất đai 2024 · 31/2024/QH15</span>
+    <h2 class="sec">Định giá đất sát thị trường — thay đổi có sức nặng nhất</h2>
+    <p class="lead">Chi phí đất là biến số ảnh hưởng lớn nhất tới hiệu quả dự án. Luật Đất đai 2024 viết lại toàn bộ cách xác định giá đất.</p>
+
+    <div class="cmp">
+      <div class="top"><h3>1. Bảng giá đất & khung giá đất</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Luật cũ (2013)</div><p><b>Khung giá đất</b> của Chính phủ + bảng giá đất <b>5 năm/lần</b> + hệ số điều chỉnh K — thường thấp xa giá thị trường.</p></div>
+        <div class="col new"><div class="lbl">Luật mới (Điều 159)</div><p><b>Bỏ khung giá đất</b>; bảng giá đất do tỉnh ban hành, <b>cập nhật hằng năm</b>, sát giá thị trường. Bảng giá mới áp dụng từ <b>01/01/2026</b>.</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>Tiền sử dụng đất & chi phí GPMB tăng → biên lợi nhuận mỏng đi, phải định giá lại dự án. Lợi thế thuộc về DN có quỹ đất giá vốn thấp mua từ trước.</div>
+        <div class="row"><span class="tag kh">KH</span>Thuế/phí (trước bạ, TNCN) tính trên giá sát thị trường → nghĩa vụ tài chính tăng; nhưng minh bạch hơn.</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="top"><h3>2. Bồi thường, hỗ trợ, tái định cư</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Luật cũ</div><p>Bồi thường theo giá nhà nước thấp → khiếu kiện kéo dài, GPMB tắc.</p></div>
+        <div class="col new"><div class="lbl">Luật mới</div><p>Bồi thường theo giá đất <b>sát thị trường</b>; nguyên tắc bố trí <b>tái định cư trước</b> khi thu hồi; đa dạng hình thức bồi thường.</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>Chi phí GPMB tăng nhưng dễ tạo đồng thuận → giải phóng mặt bằng nhanh hơn.</div>
+        <div class="row"><span class="tag kh">KH</span>Người bị thu hồi đất được bồi thường công bằng hơn.</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="top"><h3>3. Nhà ở thương mại & nguồn đất triển khai</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Luật cũ</div><p>Nhiều tranh cãi về loại đất được làm nhà ở thương mại.</p></div>
+        <div class="col new"><div class="lbl">Luật mới</div><p>Chỉ cho làm nhà ở thương mại trên <b>đất ở</b> hoặc đất có <b>một phần đất ở</b> → tạo "nút thắt" quỹ đất, sau đó được <b>Nghị quyết 171</b> thí điểm gỡ.</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>Quỹ đất là đất khác bị kẹt; phải trông vào cơ chế thí điểm NQ 171 (xem tab riêng).</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="top"><h3>4. Cấp sổ cho đất không giấy tờ & số hóa</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Luật cũ</div><p>Mốc xét cấp sổ cho đất không giấy tờ đến trước 01/7/2004; chưa số hóa.</p></div>
+        <div class="col new"><div class="lbl">Luật mới</div><p>Mở rộng xét cấp sổ cho đất sử dụng ổn định <b>trước 01/7/2014</b>; xây dựng hệ thống thông tin đất đai, <b>mã định danh BĐS</b> (từ 01/3/2026).</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag kh">KH</span>Nhiều thửa đất cũ có cơ hội được hợp thức hóa, cấp sổ.</div>
+        <div class="row"><span class="tag dn">DN</span>Minh bạch tình trạng pháp lý/thế chấp/quy hoạch — giảm "lập lờ" thông tin.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NGHỊ QUYẾT -->
+<section class="tab" id="nghiquyet">
+  <div class="wrap">
+    <h2 class="sec">Hai nghị quyết "gỡ vướng" cho thị trường</h2>
+    <p class="lead">Bên cạnh luật, Quốc hội dùng nghị quyết đặc thù để xử lý các điểm nghẽn cấp bách.</p>
+
+    <div class="cmp">
+      <div class="top"><h3>Nghị quyết 171/2024/QH15 — thí điểm thỏa thuận nhận QSDĐ</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Bối cảnh</div><p>Luật Đất đai 2024 chỉ cho làm nhà ở thương mại trên đất ở → nhiều dự án có quỹ đất khác bị "đóng băng".</p></div>
+        <div class="col new"><div class="lbl">Cơ chế mới (hiệu lực 01/04/2025, thí điểm 5 năm)</div><p>Cho phép DN làm nhà ở thương mại qua <b>thỏa thuận nhận QSDĐ — kể cả đất không phải đất ở</b>, không bắt buộc đấu giá/đấu thầu; điều kiện là khu đất nằm trong <b>danh mục do HĐND tỉnh duyệt</b> + văn bản chấp thuận của UBND tỉnh.</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>Kênh tạo lập quỹ đất linh hoạt, "hồi sinh" nhiều dự án dở dang. TP.HCM đã duyệt hàng trăm khu đất thí điểm.</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="top"><h3>Nghị quyết 170/2024/QH15 + Nghị định 76/2025 — gỡ dự án tồn đọng</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Bối cảnh</div><p>Nhiều dự án tại TP.HCM, Đà Nẵng, Khánh Hòa dính kết luận thanh tra, kiểm tra, bản án — "treo" nhiều năm, không xác định được nghĩa vụ tài chính.</p></div>
+        <div class="col new"><div class="lbl">Cơ chế đặc thù (hiệu lực 01/04/2025)</div><p>Cho phép <b>xử lý riêng</b> nhóm dự án này, gồm cơ chế <b>xác định giá đất theo thời điểm</b> cụ thể; nền tảng để tiếp tục triển khai và cấp sổ cho cư dân.</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>Doanh nghiệp có dự án "đóng băng" tại 3 địa phương này khơi lại được dòng tiền và tiến độ.</div>
+        <div class="row"><span class="tag kh">KH</span>Cư dân mua nhà tại các dự án này có cơ hội được cấp sổ hồng.</div>
+      </div>
+    </div>
+    <div class="note info">Xu hướng chung: cơ chế gỡ vướng đang được <b>mở rộng ra phạm vi toàn quốc</b> cho các dự án có kết luận thanh tra/kiểm toán, kèm mục tiêu cấp hàng chục nghìn sổ hồng mỗi năm (riêng TP.HCM đặt mục tiêu 61.200 sổ trong 2026).</div>
+  </div>
+</section>
+
+<!-- HUY ĐỘNG VỐN -->
+<section class="tab" id="von">
+  <div class="wrap">
+    <h2 class="sec">Kỷ luật huy động vốn: tín dụng & trái phiếu bị siết</h2>
+    <p class="lead">Hai kênh vốn lớn nhất của chủ đầu tư đều chịu khung pháp lý chặt hơn — đẩy doanh nghiệp về kỷ luật tài chính.</p>
+
+    <div class="cmp">
+      <div class="top"><h3>Tín dụng ngân hàng — Luật Các tổ chức tín dụng 2024 (32/2024/QH15)</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Luật cũ</div><p>Giới hạn cấp tín dụng rộng hơn; kiểm soát sở hữu chéo, cho vay "sân sau" chưa chặt.</p></div>
+        <div class="col new"><div class="lbl">Luật mới (hiệu lực 01/07/2024)</div><p><b>Giảm dần giới hạn cấp tín dụng</b> cho một khách hàng & người liên quan; siết <b>sở hữu chéo</b> và cho vay người liên quan; cho phép TCTD <b>chuyển nhượng dự án là tài sản bảo đảm</b> để thu hồi nợ (Điều 200).</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>Khó dựa vào vay ngân hàng liên kết/"sân sau"; buộc đa dạng hóa nguồn vốn.</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="top"><h3>Trái phiếu doanh nghiệp — Luật Chứng khoán (sửa đổi bởi 56/2024/QH15)</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Trước đây</div><p>Phát hành riêng lẻ dễ dãi, nhà đầu tư cá nhân mua ồ ạt → khủng hoảng TPDN BĐS 2022–2023.</p></div>
+        <div class="col new"><div class="lbl">Quy định mới</div><p>Nhà đầu tư cá nhân chuyên nghiệp chỉ được mua trái phiếu riêng lẻ khi trái phiếu <b>có xếp hạng tín nhiệm + tài sản bảo đảm</b>, hoặc <b>có xếp hạng tín nhiệm + bảo lãnh thanh toán của ngân hàng</b>. (NĐ 153/2020, sửa bởi NĐ 65/2022, NĐ 08/2023.)</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>Phát hành trái phiếu tốn kém & khó hơn (cần xếp hạng, TSBĐ, bảo lãnh); "đảo nợ" bị hạn chế → quay lại kỷ luật vốn CSH và dòng tiền bán hàng.</div>
+        <div class="row"><span class="tag kh">KH</span>Nhà đầu tư trái phiếu cá nhân được bảo vệ tốt hơn, sản phẩm minh bạch hơn.</div>
+      </div>
+    </div>
+    <div class="note warn">Khung trái phiếu doanh nghiệp <b>thay đổi rất nhanh</b> (liên tục có dự thảo nghị định mới). Với kế hoạch phát hành cụ thể, cần kiểm tra văn bản hiệu lực tại thời điểm phát hành.</div>
+  </div>
+</section>
+
+<!-- DỰ THẢO 2026 -->
+<section class="tab" id="duthao">
+  <div class="wrap">
+    <h2 class="sec">Dự thảo Luật Đất đai (sửa đổi) — đang lấy ý kiến</h2>
+    <p class="lead">Chỉ sau ~2 năm, Luật Đất đai 2024 lại chuẩn bị được sửa. Đây mới là <b>dự thảo</b>, nội dung có thể thay đổi trước khi Quốc hội thông qua.</p>
+
+    <div class="note info"><b>Tiến trình:</b> Bộ Nông nghiệp và Môi trường lấy ý kiến dự thảo <b>20/07–10/08/2026</b> → trình Ủy ban Thường vụ Quốc hội (tháng 9) → dự kiến trình Quốc hội xem xét tại <b>Kỳ họp thứ 2, khóa XVI (~tháng 10/2026)</b>.</div>
+
+    <div class="cmp">
+      <div class="top"><h3>1. Đề xuất bỏ "giá đất cụ thể"</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Hiện hành</div><p>Song song bảng giá đất và <b>giá đất cụ thể</b> (định giá riêng cho từng dự án) — khâu định giá cụ thể chậm, là nút thắt lớn.</p></div>
+        <div class="col new"><div class="lbl">Dự thảo</div><p>Đề xuất <b>bỏ giá đất cụ thể</b>, chỉ dùng bảng giá đất; Nhà nước quyết định giá đất, bổ sung nhiều quy định về bảng giá.</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>Nếu thông qua, có thể <b>rút ngắn thời gian xác định nghĩa vụ tài chính</b> — gỡ đúng điểm nghẽn khiến dự án chậm ra sổ.</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="top"><h3>2. Thu hồi đất & giải phóng mặt bằng</h3></div>
+      <div class="grid">
+        <div class="col old"><div class="lbl">Hiện hành</div><p>Thời gian chi trả bồi thường sau quyết định thu hồi là <b>30 ngày</b>.</p></div>
+        <div class="col new"><div class="lbl">Dự thảo</div><p><b>Bổ sung các trường hợp thu hồi đất</b>, thay đổi quy định GPMB; rút ngắn thời gian chi trả bồi thường xuống <b>20 ngày</b>.</p></div>
+      </div>
+      <div class="impact">
+        <div class="row"><span class="tag dn">DN</span>GPMB có thể nhanh hơn; mở rộng trường hợp thu hồi tác động tới nguồn đất dự án.</div>
+      </div>
+    </div>
+
+    <div class="note warn">Đây là <b>dự thảo</b> — chưa có hiệu lực. Không nên coi là quy định chắc chắn khi ra quyết định. Theo dõi bản thông qua chính thức và số hiệu luật mới.</div>
+  </div>
+</section>
+
+<!-- TÁC ĐỘNG -->
+<section class="tab" id="tacdong">
+  <div class="wrap">
+    <h2 class="sec">Tổng hợp tác động: Doanh nghiệp vs Khách hàng</h2>
+    <p class="lead">Bức tranh "được – mất" của từng nhóm thay đổi.</p>
+
+    <table class="impact-tbl">
+      <tr><th>Chủ đề</th><th>Tác động tới Doanh nghiệp / Nhà đầu tư</th><th>Tác động tới Khách hàng mua nhà</th></tr>
+      <tr><td>Định giá đất sát thị trường</td><td>Chi phí đất & GPMB tăng, ép biên lợi nhuận; lợi thế cho DN có quỹ đất giá vốn thấp mua sớm.</td><td>Thuế/phí tính trên giá sát thị trường tăng, nhưng minh bạch hơn.</td></tr>
+      <tr><td>Cọc 5% & tiến độ thanh toán</td><td>Giảm huy động vốn giá rẻ giai đoạn sớm; kỷ luật hơn.</td><td>Giảm mạnh rủi ro mất tiền; giữ lại 5% ép ra sổ.</td></tr>
+      <tr><td>Minh bạch & bảo lãnh</td><td>Tăng nghĩa vụ công bố, hồ sơ phải chuẩn.</td><td>Dễ kiểm chứng pháp lý; được bảo lãnh ngân hàng bảo vệ.</td></tr>
+      <tr><td>Phân lô bán nền (siết)</td><td>Thu hẹp sản phẩm đất nền đô thị lớn.</td><td>Giảm rủi ro mua nền không xây/ra sổ được.</td></tr>
+      <tr><td>M&A dự án dễ hơn</td><td>Kênh tái cấu trúc, thoái vốn, hợp tác linh hoạt.</td><td>Gián tiếp: dự án "chết" có cơ hội đổi chủ, tiếp tục triển khai.</td></tr>
+      <tr><td>Siết vốn & trái phiếu</td><td>Rào cản với DN mỏng vốn/đòn bẩy cao; buộc kỷ luật tài chính.</td><td>Nhà đầu tư trái phiếu được bảo vệ hơn.</td></tr>
+      <tr><td>NQ 170 & 171 (gỡ vướng)</td><td>Khơi thông quỹ đất & dự án tồn đọng — cơ hội lớn cho DN có dự án đúng diện.</td><td>Cư dân dự án "treo" có cơ hội được cấp sổ.</td></tr>
+      <tr><td>Chung cư mini & NƠXH</td><td>NƠXH hấp dẫn hơn; thêm phân khúc.</td><td>Chung cư mini có khung cấp sổ; dễ tiếp cận NƠXH.</td></tr>
+    </table>
+
+    <div class="note" style="margin-top:16px"><b>Điểm mấu chốt cho nhà đầu tư/doanh nghiệp:</b> luật mới tạo <b>phân hóa</b> — thắng lớn thuộc về DN có <b>quỹ đất sạch, pháp lý rõ, tài chính khỏe</b>; DN đòn bẩy cao, pháp lý mập mờ chịu áp lực. Chuỗi giá trị then chốt: <i>pháp lý dự án thông → ra sổ/ghi nhận doanh thu → giảm áp lực trái phiếu → tái cấp vốn thuận lợi</i>.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h4>Nguồn tham khảo chính</h4>
+    <ul>
+      <li>Luật Đất đai 2024 (31/2024/QH15), Luật Nhà ở 2023 (27/2023/QH15), Luật Kinh doanh BĐS 2023 (29/2023/QH15) — hiệu lực 01/08/2024</li>
+      <li>Nghị quyết 170/2024/QH15 &amp; Nghị định 76/2025/NĐ-CP; Nghị quyết 171/2024/QH15</li>
+      <li>Luật Các tổ chức tín dụng 2024 (32/2024/QH15); Luật Chứng khoán sửa đổi (56/2024/QH15) &amp; NĐ trái phiếu 153/2020, 65/2022, 08/2023</li>
+      <li>Dự thảo Luật Đất đai (sửa đổi) — lấy ý kiến 20/07–10/08/2026 (Bộ Nông nghiệp và Môi trường)</li>
+      <li>Cổng thông tin: thuvienphapluat.vn, xaydungchinhsach.chinhphu.vn, luatvietnam.vn, vietstock.vn</li>
+    </ul>
+    <p style="margin-top:12px;color:#8a9aab">Trang tổng hợp mang tính tham khảo, không phải tư vấn pháp lý hay khuyến nghị đầu tư. Tạo bằng skill phap-ly-bds-vn · Cập nhật 22/07/2026.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav=document.getElementById('tabnav');
+  nav.addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return;
+    var t=b.getAttribute('data-t');
+    nav.querySelectorAll('button').forEach(function(x){x.classList.toggle('active',x===b)});
+    document.querySelectorAll('section.tab').forEach(function(s){s.classList.toggle('active',s.id===t)});
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+</html>
